@@ -1,0 +1,59 @@
+body {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-auto-rows: auto auto 1fr ;
+grid-template-areas:
+"h h"
+  "m m"
+    "i i"
+      "d1 d1"
+        "d2 d2"
+          "d3 d3"
+            "f f";
+grid-gap: 0.5em 1em;
+}
+
+header {
+  grid-area: h;
+}
+
+div.topnav {
+  grid-area: m;
+}
+
+footer {
+  grid-area: f;
+}
+
+iframe {
+grid-area: i;
+}
+
+div.train {
+  grid-area: d1;
+}
+
+div.bus {
+  grid-area: d2;
+}
+
+div.car {
+  grid-area: d3;
+}
+
+@media screen and (min-width: 670px) {
+  /* Media Query för skärm (670px) och högre */
+  .topnav a {
+    width: 15%;
+  }
+  body {
+    grid-template-areas:
+    "h h"
+      "m m"
+        "i i"
+          "d1 d1"
+            "d2 d2"
+              "d3 d3"
+                "f f";
+  }
+}

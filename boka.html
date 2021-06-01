@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="sv" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boka | Malmö Saltsjöbad</title>
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+  <body>
+    <header>
+      <h1>Boka Rumstyp</h1>
+    </header>
+  <section>
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Förnamn</label><br>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn..."><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Efternamn</label><br>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Ditt efterman..."><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="telephone">Tel nr.</label><br>
+          </div>
+          <div class="col-75">
+            <input type="tel" id="telephone" name="telephone" placeholder="Ditt telefonnummer..."><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label><br>
+          </div>
+          <div class="col-75">
+            <input type="text" id="email" name="email"><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label>Rumstyp</label><br>
+          </div>
+          <div class="col-75">
+            <select id="typeroom" name="typeroom">
+            <option value="enkel">Enkelrum</option>
+            <option value="dubbel">Dubbelrum</option>
+            <option value="suit">Suit</option>
+          </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Övrigt</label><br>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Övrig info..." style="height:200px"></textarea><br>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </section>
+  <aside>
+    <img src="https://skift.com/wp-content/uploads/2018/03/management-trainee-at-Pearl-Continental-Hotel-Rawalpindi-8-https-www.flickr.comphotoshashoofoundation8231296136-1024x680.jpg" width="750" height="500" alt="Reception">
+  </aside>
+  <footer>Saltsjöbadsvägen 15 | 271 39 Ystad, Sverige</footer>
+
+  <!-- Navigation bar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div class="topnav" id="myTopnav">
+    <a href="start.html" class="active">Start</a>
+    <a href="boka.html">Boka</a>
+    <a href="hitta.html">Hitta</a>
+    <a href="kontakta.html">Kontakta</a>
+    <a href="gym.html">Gym</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  </body>
+</html>
